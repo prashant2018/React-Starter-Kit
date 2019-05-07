@@ -5,7 +5,8 @@ const archiver = require('archiver');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
+
 
 app.use(bodyParser.json());
 app.use(express.json());  
@@ -49,4 +50,4 @@ function getReactAppTar(name, res){
     tar.finalize();
 }
 
-app.listen(port, () => console.log(`Listening on port ${port}!`))
+app.listen(PORT, () => console.log(`Listening on port ${PORT}!`))
