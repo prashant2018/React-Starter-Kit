@@ -18,6 +18,8 @@ app.get('/', (req, res) => {
 app.get('/api', (req, res) => {
     
     name = req.query.name;
+    if(!name)
+        name = "demo"
     archive_type = req.query.archive_type;
     name = name.split(' ').join('-');
     

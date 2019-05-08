@@ -1,16 +1,35 @@
 <html>
     <title>
+        React Starter Kit
     </title>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            .background{
+                background-color : #212121
+            }
+            .text{
+                color : #ffffff
+            }
+        </style>
     </head>
-    <body>
-        <form action="/api">
-            <input type="text" name="name"/>
-            <select name="archive_type">
-                <option value="zip">zip</option>
-                <option value="tar">tar</option>
-            </select>
-            <input type="submit" value="Get Zip"/>
-        </form>
+    <body class="background text-center text">
+        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+            <div role="main" class="inner cover">
+                <h1 class="cover-heading">React Starter Kit</h1>
+            </div>
+            <form action="/api">
+                    <div>
+                        <input type="text" name="name"/>
+                    </div>
+                    <div>
+                        <input type="radio" name="archive_type" value="zip" checked>
+                        <label for="zip">Zip</lable>
+                        <input type="radio" name="archive_type" value="tar">
+                        <label for="tar">Tar</lable>
+                    </div>
+                <input type="submit" value="Download" class="btn btn-lg btn-secondary"/>
+            </form>
+        </div>
     </body>
 </html>
