@@ -16,16 +16,16 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api', (req, res) => {
-    
+    console.log(req.query);
     name = req.query.name;
     if(!name)
         name = "demo"
     archive_type = req.query.archive_type;
     name = name.split(' ').join('-');
     
-    if (archive_type=='zip')
+    if (archive_type=='Zip')
         getReactAppZip(name, res);
-    else if(archive_type=='tar')
+    else if(archive_type=='Tar')
         getReactAppTar(name, res);
 
 });

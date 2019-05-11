@@ -1,35 +1,49 @@
-<html>
+<html class="gr__getbootstrap_com">
     <title>
         React Starter Kit
     </title>
     <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <style>
-            .background{
-                background-color : #212121
-            }
-            .text{
-                color : #ffffff
-            }
-        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
-    <body class="background text-center text">
-        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-            <div role="main" class="inner cover">
-                <h1 class="cover-heading">React Starter Kit</h1>
+    <body class="text-centre" style="background-color:#eceff1">
+        <div class="jumbotron jumbotron-fluid" style="height:60%; background-color:#212121">
+            <div class="container">
+                <div>
+                    <form action="/api">
+                        <div class="container">
+                            <div class="row" style="color:#ffffff; margin-bottom:30px">
+                                <h2 class="mx-auto"> React Starter Kit </h2>
+                            </div>
+                            <div class="row" style="margin-bottom:30px">
+                                <input class="form-control text-center" type="text" name="name" placeholder="App Name" autocomplete="off" 
+                                style="margin-left:20%; margin-right:20%"/>
+                            </div>
+                            <div class="row">
+                                <div class="mx-auto">
+                                    <input type="submit" name="archive_type" value="Zip" class="btn btn-secondary"/>
+                                    <input type="submit" name="archive_type" value="Tar" class="btn btn-secondary"/>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <form action="/api">
-                    <div>
-                        <input type="text" name="name"/>
-                    </div>
-                    <div>
-                        <input type="radio" name="archive_type" value="zip" checked>
-                        <label for="zip">Zip</lable>
-                        <input type="radio" name="archive_type" value="tar">
-                        <label for="tar">Tar</lable>
-                    </div>
-                <input type="submit" value="Download" class="btn btn-lg btn-secondary"/>
-            </form>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto">
+                    > cd demo-app
+                </div>
+                <div class="mx-auto">
+                    > npm install
+                </div>
+                <div class="mx-auto">
+                    > npm start
+                </div>
+            </div>
         </div>
     </body>
 </html>
