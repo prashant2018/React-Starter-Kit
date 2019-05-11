@@ -4,52 +4,64 @@
     </title>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="scripts/styles.css">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body class="text-centre" style="background-color:#eceff1">
-        <div class="jumbotron jumbotron-fluid" style="height:60%; background-color:#212121">
-            <div class="container">
-                <div>
-                    <form action="/api">
-                        <div class="container">
-                            <div class="row" style="margin-bottom:30px">
-                                <h2 class="mx-auto"><code style="color:#ffffff"><b> React Starter Kit </b></code></h2>
-                            </div>
-                            <div class="row" style="margin-bottom:30px">
-                                <input class="form-control text-center" type="text" name="name" placeholder="Your App Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your App Name'" autocomplete="off" 
-                                style="margin-left:20%; margin-right:20%; border-radius:0px"/>
-                            </div>
-                            <div class="row">
-                                <div class="mx-auto">
-                                    <input type="submit" name="archive_type" value="Zip" class="btn btn-secondary" style="border-radius:0px"/>
-                                    <input type="submit" name="archive_type" value="Tar" class="btn btn-secondary" style="border-radius:0px"/>
+
+        <div id="page-container">
+            <div id="content-wrap">
+                <div class="jumbotron jumbotron-fluid" style="height:60%; background-color:#212121">
+                <div class="container" style="margin-top:5%">
+                    <div>
+                        <form action="/api">
+                            <div class="container">
+                                <div class="row" style="margin-bottom:30px">
+                                    <h2 class="mx-auto"><code style="color:#ffffff"><b> React Starter Kit </b></code></h2>
+                                </div>
+                                <div class="row" style="margin-bottom:30px">
+                                    <input class="form-control text-center" type="text" name="name" placeholder="Your App Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your App Name'" autocomplete="off" 
+                                    style="margin-left:20%; margin-right:20%; border-radius:0px"/>
+                                </div>
+                                <div class="row">
+                                    <div class="mx-auto">
+                                        <input type="submit" name="archive_type" value="Zip" class="btn btn-secondary" style="border-radius:0px"/>
+                                        <input type="submit" name="archive_type" value="Tar" class="btn btn-secondary" style="border-radius:0px"/>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="mx-auto">
+                        <code style="color:#212121"><h4><i>cd demo-app</i></h4></code>
+                    </div>
+                    <div class="mx-auto">
+                        <img src="https://img.icons8.com/metro/26/000000/double-right.png">
+                    </div>
+                    <div class="mx-auto">
+                        <code style="color:#212121"><h4><i>npm install</i></h4></code>
+                    </div>
+                    <div class="mx-auto">
+                        <img src="https://img.icons8.com/metro/26/000000/double-right.png">
+                    </div>
+                    <div class="mx-auto">
+                        <code style="color:#212121"><h4><i>npm start</i></h4></code>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="mx-auto">
-                    <code style="color:#212121"><h4><i>cd demo-app</i></h4></code>
-                </div>
-                <div class="mx-auto">
-                    <img src="https://img.icons8.com/metro/26/000000/double-right.png">
-                </div>
-                <div class="mx-auto">
-                    <code style="color:#212121"><h4><i>npm install</i></h4></code>
-                </div>
-                <div class="mx-auto">
-                    <img src="https://img.icons8.com/metro/26/000000/double-right.png">
-                </div>
-                <div class="mx-auto">
-                    <code style="color:#212121"><h4><i>npm start</i></h4></code>
-                </div>
-            </div>
+        <footer id="footer">
+            <p class="text-right" style="margin-right:20px">
+                <span style="margin-right:20px"><a href="#">Privacy</a></span>
+                <span style="margin-right:20px"><a href="#">About</a></span>
+            </p>
+        </footer>
         </div>
     </body>
 </html>
