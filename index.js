@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname+'/views/index.html'));
 });
 
+app.get('/privacy', (req, res) => {
+    res.sendFile(path.join(__dirname+'/scripts/privacy.html'));
+});
+
 app.get('/api', (req, res) => {
     console.log(req.query);
     name = req.query.name;
